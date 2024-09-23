@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap'); 
+/* google font  pour les polices */
+
+
+body {
+    background-color: rgb(177, 90, 55);
+
+}
+
+h1{
+    color: blue;
+    text-align: center;
+    text-decoration: underline green wavy;
+    /* vague en dessous du mot */
+    letter-spacing: 30px;
+}
+
+p {
+    color: yellow;
+    font-size: 30px;
+}
+
+
+
+#fin {
+    background-color: rgba(2, 255, 200, 0.2);
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 130px;
+    padding: 10px;
+    border-top: 3px solid blueviolet;
+    border-right: 3px dotted blue;
+    border-bottom: 3px dashed red;
+    border-left: 3px double green;
+    border-radius: 25px;
+
+}
+
+#dernierp {
+    background-color: rgb(196, 191, 201);
+    font-size: 45px;
+    color: rgb(255, 0, 0);
+
+    font-family: "Jacquarda Bastarda 9", serif;
+    font-size: 20px;
+    font-style: normal;
+
+
+}
+
+p::first-letter {
+    font-size: 2em;
+}
+
+p::first-line {
+    text-decoration: line-through color(srgb 255 0 0);
+    
+}
+
+.container {
+    display: flex;
+
+
+}

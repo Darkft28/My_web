@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+header {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+body {
+    --colorboxmoi: rgb(122, 180, 168);
+    --colorapropos: rgb(154, 214, 194);
+
+    background-image: linear-gradient(45deg, 
+        rgb(20, 222, 124) 0%, 
+        rgb(20, 222, 124) 21%, 
+        rgb(25, 190, 119) 21%, 
+        rgb(25, 190, 119) 37%, 
+        rgb(30, 158, 113) 37%, 
+        rgb(30, 158, 113) 46%, 
+        rgb(35, 126, 108) 46%, 
+        rgb(35, 126, 108) 53%, 
+        rgb(39, 94, 103) 53%, 
+        rgb(39, 94, 103) 59%, 
+        rgb(44, 62, 97) 59%, 
+        rgb(44, 62, 97) 77%, 
+        rgb(38, 48, 86) 77%, 
+        rgb(38, 48, 86) 100%);
+}
+
+h1 {
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-size: 4em;
+}
+
+h2, h3 {
+    font-size: 2em;
+}
+
+#PDP {
+    border-radius: 50px;
+    width: 15%;
+}
+
+.moi {
+    background-color: var(--colorapropos);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+#me_contacter {
+    background-color: rgb(81, 133, 146);
+    text-align: left;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+#me_contacter a {
+    color: red;
+}
+
+.box_moi {
+    border: 2px solid black;
+    background-color: var(--colorboxmoi);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.article {
+    background-color: var(--colorapropos);
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.box_article {
+    background-color: var(--colorboxmoi);
+    border-radius: 20px;
+    margin: 10px 0;
+    padding: 25px;
+    border: 1px solid black;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+/* p > span {
+    text-decoration: underline;
+} */
+
+.box_article a:hover {
+    color: rgb(13, 56, 21);
+}
+
+#youtube {
+    font-size: 5em;
+}
+
+/* Grille responsive pour les articles */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.link_media {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: rgb(43, 226, 217);
+    }
+
+    p {
+        color: aqua;
+    }
+
+    .link_media {
+        width: 100%;
+    }
+
+    iframe {
+        width: 90%;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
